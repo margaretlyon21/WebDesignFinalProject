@@ -1,0 +1,740 @@
+#mobile {
+	display: none;
+}
+
+#desktop {
+	display: inline;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: #333 !important;
+}
+
+a {
+  color: #333;
+}
+
+header {
+	font-size: 50%;
+  display: flex;
+  background-color: white;
+  align-items: center; 
+  justify-content: center;
+}
+
+table {
+    margin: 20px auto;
+    width: 70%; 
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+.top-nav-bar {
+  background-color: #f3e7ce;
+	box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.top-nav-bar a {
+  font-size: 200%;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  color: #333;
+  transition: color 0.3s ease; 
+}
+
+.top-nav-bar a:hover {
+  color: #fff; 
+  background-color: #555; 
+}
+
+.top-nav-bar a.active {
+  text-decoration: underline;
+  text-decoration-color: darkgreen;
+  text-underline-offset:10px;
+}
+
+.body {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.index-body img {
+  display: block;
+  height: 65vh;
+}
+
+.heading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white !important;
+  text-align: center;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.heading-text h1 {
+  font-size: 3.5em; /* Adjust as needed */
+  margin: 0;
+  padding: 0 20px;
+}
+
+.heading-text a {
+  color: white;
+  font-size: 2em; /* Adjust as needed */
+  margin: 0;
+  padding: 0 20px;
+}
+
+.heading-text a:hover {
+  color: gray;
+}
+.feature-bar {
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding: 1px;
+  display: block;
+  background-color: #7ac26c;
+  font-size: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); 
+  justify-content: center;
+}
+
+.feature-bar h1, p {
+  color: white;
+}
+
+.bottom-box {
+  padding-bottom: 5%;
+	padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3e7ce;
+  gap: 1%; 
+}
+
+.circular-item {
+  text-align: center;
+  margin: 1%; 
+}
+
+.circular-item img {
+  width: 200px; 
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  margin: 0 auto; 
+  display: block; 
+}
+
+.circular-item figcaption {
+  font-size: 14px; 
+  color: #333; 
+  margin-top: 10px; 
+  text-align: center; 
+}
+
+footer {
+    flex-direction: column;
+    clear: both;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+.modified-footer {
+  background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    font-size: 0.6em;
+}
+
+.bottom-box a:hover{
+	background-color: rgba(255, 255, 255, 0.5); 
+}
+
+footer {
+	text-align: center;
+	font-size: 8px;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row
+}
+
+.body {
+  font-size: 1.2em;
+}
+
+.body h1 {
+  color: darkgreen;
+}
+
+.sidebar {
+  min-width: 180px;
+  min-height: 100%;
+  float: left;   
+  display: block;
+  width: 15%;
+  background-color: #e6ebe7;
+}
+
+.sidebar-links {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  margin-top: 2vh;
+}
+.sidebar-links a {
+  display: block;
+  text-decoration: none;
+  color: gray;
+  padding: 2vh;
+  font-size: 150%
+}
+
+.sidebar-links a.active-sidebar {
+  display: block;
+  background-color: #7ac26c;
+  color: white;
+  justify-content: left;
+}
+
+.information {
+  color: #333;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* image gallery code - instructional code from W3C 'CSS Image Gallery' */
+.gallery-box {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-wrap: wrap;         
+  gap: 10px;               
+}
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: calc(25% - 10px); 
+  box-sizing: border-box;     
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+div.gallery:hover {
+  border-color: #777;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: black;
+}
+/* end W3C sample code */
+
+div.b {
+  border: none;
+  width: calc(30% - 10px); 
+  box-sizing: border-box; 
+  align-items: stretch; }
+
+.gallery-species {
+  min-width: 70%;
+  text-align: left;
+  align-items: flex-start;
+}
+
+hr {
+  margin-top: 10px;
+  border-color: lightgray;
+  min-width: 70%;
+  margin-right: 5%;
+}
+
+.invasives-information {
+  min-width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invasives-information a:hover {
+  color: darkgreen;
+}
+.invasives-information h1, .invasives-information p{
+  color: #333;
+  padding-left: 10px;
+  text-align: left;
+  margin-left: calc(10% - 10px);
+  margin-left: calc(5% - 10px);
+
+}
+
+.invasives-video-container {
+  text-align: center;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.invasives-video-container h4{
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+
+.species-page .species-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  color: black;
+}
+
+
+.body-img {
+  flex: 1 1 50%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.species-page img {
+  min-width: 50%;
+  max-width: 100%;
+}
+
+.identification {
+  margin-left: 40px;
+  margin-top: 20px;
+  color: black;
+}
+
+.practices-main-container {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.practices-body {
+  color: #333;
+  font-size: 1.2em;
+  min-width: 70%;
+  margin-top: 5vh;
+  justify-content: center;
+  max-width: 80%;
+  text-align: left;
+  box-sizing: border-box;
+  line-height: 120%;
+}
+
+.practices-body h1{
+  color: darkgreen;
+}
+
+.practice-body p {
+  color: black;
+}
+
+.practices-body h4 a:hover{
+  color: darkgreen;
+}
+
+.practices-description {
+  line-height: 120%;
+    border-left: darkgreen solid 5px;
+    font-weight: 500;
+    margin: 30px 0;
+    padding: 15px;
+    font-size: 1.8em;
+}
+
+.right-image {
+    float: right;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    min-width: 40vh;
+    max-width: 50%;
+    max-height: 50vh;
+}
+
+.practices-video-container {
+  text-align: center;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.indent {
+  padding-left: 3%;
+}
+
+.mission-statement {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.mission-statement h1{
+  font-size: 1.8em;
+}
+
+.mission-statement h3 {
+  font-size: 1.1em;
+  color: darkgreen;
+  font-style: italic;
+}
+
+.about-information {
+  font-size: 1.2em;
+}
+
+.contact-banner {
+    clear:both;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 100%;
+    background-color: darkgreen;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-banner h2 {
+  color: white;
+    font-size: 1.5em;
+}
+
+.contact-banner p {
+  color: white !important; 
+}
+
+
+.contact-banner .contact-form {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-banner .contact-form input[type="text"],
+.contact-banner .contact-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.contact-banner .contact-form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #7ac26c;
+    color: #333;
+    cursor: pointer;
+}
+
+.contact-banner .contact-form button:hover {
+    background-color: yellow;
+}
+
+
+.contact-form-container {
+    max-width: 80%;
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7ac26c;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+.species-information-container {
+  flex-grow: 1;
+  overflow: auto;
+  padding-left: 3%;
+}
+
+.species-information-container h1, h2 {
+  text-align: center;
+}
+
+.species-information-container img {
+  margin-bottom: 20px;
+  float: left;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+.species-information-container p {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 3%;
+}
+
+
+
+/* Mobile-first media query */
+@media only screen and (max-width: 768px) {
+
+  .main-container {
+    max-width: 100vh;
+    width: 100%;
+  }
+
+  .right-image {
+    padding-left: 0px;
+    float: none;
+    display: block;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .practices-body {
+    min-width: 95%;
+  }
+
+  .species-page-main-container {
+    display: flex;
+  }
+
+  .species-page .species-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .species-page .body-img {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+.species-information {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: auto;
+    text-align: center;
+  }
+
+  .species-information-container {
+    flex: 1;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .species-page .species-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .species-page .body-img {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px; 
+  }
+
+  .species-page .species-information {
+    max-width: 100%;
+    width: auto;
+    text-align: center;
+  }
+
+  .top-nav-bar {
+  height: 8vh;
+  flex-direction: column;
+  height: auto;
+  display: flex;
+}
+
+.top-nav-bar a {
+  width: 100%;
+  font-size: 150%;
+  position: relative;
+  display: block;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.top-nav-bar a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px; 
+  background-color: #333; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+  .body img {
+    height: 50vh;
+  }
+
+  .practices-heading {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .feature-bar {
+    padding-top: 20px;
+  }
+
+  .circular-item img {
+    width: 150px;
+  }
+
+  .species-3, .species-4 {
+    display: none;
+  }
+  .contact-banner .contact-form input[type="text"],
+.contact-banner .contact-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+}
+  .sidebar {
+    display: none;
+  }
+
+  .species-information-container img{
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 95%;
+  }
+
+  .heading-text {
+    margin-top: 20vh;
+  }
+
+  .invasives-information {
+    max-width: 95%;
+  }
+
+
+}
+
